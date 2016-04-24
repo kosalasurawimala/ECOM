@@ -68,7 +68,7 @@
 						<li><a href="#">Accesories</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#"><span class="glyphicon glyphicon-user"></span> [User's Name]</a></li>
+						<li><a href="login.jsp"><span class="glyphicon glyphicon-user"></span> Sign In</a></li>
 						<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
 						<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contact Us</a></li>
 					</ul>
