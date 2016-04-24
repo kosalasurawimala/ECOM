@@ -17,11 +17,9 @@
 </head>
 <body>
 <div class="container">
-
-
         <%--form block--%>
         <div class="col-sm-6 formblock">
-            <form method="post" action="#" id="registration">
+            <form method="post" action="#" id="registration" onclick="return checkpassword()">
                 <div class="form-group">
                     <label for="fn">First Name</label>
                     <input class="form-control" id="fn" placeholder="First Name" type="text">
@@ -118,7 +116,7 @@
             </form>
         </div>
         <%--Form block ends here--%>
-        <div class="col-sm-6">
+        <div class="col-sm-6 formblock regdesc">
             <h1> Wellcome to fandom corner</h1>
             <h2>Things you should know..... </h2>
         </div>
@@ -164,6 +162,22 @@
         fragg.appendChild(optg);
     });
     selg.appendChild(fragg);
+</script>
+
+<script>
+    function checkpassword() {
+     var pass = document.getElementById("pword").value;
+     var passc = document.getElementById("pwordc").value;
+     var ok = true;
+
+     if(pass !== passc){
+         alert("Password fields are not matching");
+         document.getElementById("pass").style.borderColor="#E34234";
+         document.getElementById("passc").style.borderColor="#E34234";
+         ok = false;
+     }
+        return ok;
+    }
 </script>
 
 </body>
