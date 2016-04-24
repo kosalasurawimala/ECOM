@@ -437,7 +437,11 @@
         <mandatory>1</mandatory>
         <data-type>varchar(250)</data-type>
       </column>
-      <key id="116" parent="11" name="PRIMARY">
+      <column id="116" parent="11" name="Sub">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="117" parent="11" name="PRIMARY">
         <columns>Reg_ID</columns>
         <primary>1</primary>
       </key>
